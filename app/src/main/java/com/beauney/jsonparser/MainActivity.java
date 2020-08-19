@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
+import com.beauney.library.jsonparser.JsonParser;
+
 import java.util.ArrayList;
 import java.util.List;
 
