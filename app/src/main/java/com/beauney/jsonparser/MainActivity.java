@@ -28,6 +28,10 @@ public class MainActivity extends AppCompatActivity {
         users.add(new User("李四", "654321", false));
         users.add(new User("王五", "567890", true));
         news.setReader(users);
-        Log.d("Debug", JsonParser.toJson(news));
+        String json = JsonParser.toJson(news);
+        Log.d("Debug", json);
+
+        News newNews = (News) JsonParser.parseObject(json, News.class);
+        Log.d("Debug", "newNews------>" + newNews);
     }
 }
